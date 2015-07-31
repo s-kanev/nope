@@ -16,10 +16,60 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/nope.css">
+    <link rel="stylesheet" href="../assets/nope.css"><!--FIXME: remove-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Scrollspy? Scrollspy! http://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp -->
 
-    {{ content }}
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="nav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">NOPE 2015</a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#cfp">CFP</a></li>
+            <li><a href="#dates">Important Dates</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="intro" class="container-fluid title-section">
+      <h1>2015 Workshop on Negative Outcomes, Post-mortems, and Experiences</h1>
+    </div>
+
+    {% for sec in site.content %}
+    <div id="{{sec.name}}" class="container-fluid section">
+      <h2>{{sec.name}}</h2>
+      {{sec.path}}
+    </div>
+    {% endfor %}
+
+<!--
+    <div id="about" class="container-fluid section">
+      <h2>About</h2>
+      About.
+    </div>
+
+    <div id="cfp" class="container-fluid section">
+      <h2>CFP</h2>
+      Call for papers.
+    </div>
+
+    <div id="dates" class="container-fluid section">
+      <h2>Important dates</h2>
+      Important dates.
+    </div>
+-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
