@@ -1,2 +1,5 @@
 name: Negative Outcomes, Post-mortems, and Experiences (NOPE2015)
 baseurl: /nope
+collections:
+  content:
+    output: true

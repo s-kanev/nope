@@ -1,0 +1,16 @@
+body {
+  position: relative;
+}
+
+.navbar {
+  height: 50px;
+}
+
+.title-section{
+  padding-top: 50px;
+}
+
+.section {
+  padding-top: 50px;
+  min-height: 500px;
+}
