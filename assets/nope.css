@@ -2,6 +2,9 @@ body {
   position: relative;
   padding-top: 50px;
   background-color: unset;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
 }
 
 /* Navigation style */
@@ -29,12 +32,14 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 75px;
+
+  font-family: 'Droid Sans', serif;
 }
 
 /* Only show logo on large devices, it gets ugly with the title */
 @media (min-width: 1200px) {
   .page-header {
-    background: url(nope.png) no-repeat 100% -5%;
+    background: url(nope.png) no-repeat 100%;
     background-size: 250px;
   }
 }
@@ -51,7 +56,6 @@ body {
 }
 
 .section p {
-  font-weight: 300;
   text-align: justify;
 }
 
@@ -73,5 +77,8 @@ body {
 
 .section>h3 {
   color: #AC3f36;
-  font-size: large;
+}
+
+a, a:hover{
+  color: #AC3f36;
 }
