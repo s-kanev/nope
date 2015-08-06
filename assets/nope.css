@@ -6,6 +6,9 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
 }
+a, a:hover {
+  color: #AC3f36;
+}
 
 .container {
   max-width: 800px;
@@ -26,7 +29,6 @@ body {
 .navbar-default .navbar-brand:hover {
   color: #999;
 }
-
 .navbar-default .navbar-nav>li.disabled>a {
   color: #999;
 }
@@ -36,14 +38,25 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 15px;
+  border-bottom: 0px; 
 
   font-family: 'Dosis', serif;
 }
+.page-header>h1 {
+  margin-top: 0px;
+}
 
-/* Only show logo on large devices, it gets ugly with the title */
+#page {
+    padding-top: 15px;
+}
 @media (min-width: 1200px) {
-  .page-header {
-    background: url(nope.png) no-repeat 100%;
+  /* Only show logo on large devices, it gets ugly with the title */
+  #page {
+    /*background: url(nope.png) no-repeat 100%;*/
+    background-image: url(nope.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-origin: content-box;
     background-size: 250px;
   }
 }
@@ -58,34 +71,17 @@ body {
 
 /* Sections style */
 .section {
-  padding-top: 40px;
+  padding-top: 50px; /* Should match the navbar height for <a name> links */
   min-height: 500px;
 }
-
 .section p {
   text-align: justify;
+  padding-bottom: 10px; /* adjoining margins merge, padding doesn't */
+  margin-bottom: 0px;
 }
-
 .section li {
   text-align: justify;
 }
-
-.section>h2 {
-  background: #DDD;
-  color: #AC3F36;
-  /*border-radius: 3px;*/
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-  box-shadow: 1px 1px 3px grey;
-}
-
 .section>h3 {
-  color: #AC3f36;
-}
-
-a, a:hover{
   color: #AC3f36;
 }
