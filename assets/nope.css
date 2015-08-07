@@ -6,6 +6,11 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
 a, a:hover {
   color: #AC3f36;
 }
@@ -40,10 +45,25 @@ a, a:hover {
   padding-bottom: 15px;
   border-bottom: 0px; 
 
-  font-family: 'Dosis', serif;
+  font-family: 'Questrial', sans-serif;
 }
 .page-header>h1 {
   margin-top: 0px;
+}
+@media (max-width: 768px) {
+  .page-header>h1 {
+    font-size: 28px;
+  }
+  .page-header>h1>.spacing {
+    display: none;
+  }
+  .page-header>h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+}
+.page-header h3 {
+  margin-top: 5px;
 }
 
 #page {
@@ -61,14 +81,6 @@ a, a:hover {
   }
 }
 
-.page-header h3 {
-  margin-top: 5px;
-}
-
-.page-header h1 {
-  text-transform: uppercase;
-}
-
 /* Sections style */
 .section {
   padding-top: 50px; /* Should match the navbar height for <a name> links */
@@ -79,9 +91,15 @@ a, a:hover {
   padding-bottom: 10px; /* adjoining margins merge, padding doesn't */
   margin-bottom: 0px;
 }
+@media (max-width: 768px) {
+  .section ul {
+    padding-left: 10px;
+  }
+}
 .section li {
   text-align: justify;
 }
 .section>h3 {
+  font-family: 'Questrial', sans-serif;
   color: #AC3f36;
 }
