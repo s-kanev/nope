@@ -50,6 +50,9 @@ a, a:hover {
 .page-header>h1 {
   margin-top: 0px;
 }
+.page-header>h1>.spacing {
+  font-family: "inherit";
+}
 @media (max-width: 768px) {
   .page-header>h1 {
     font-size: 28px;
