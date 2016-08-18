@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NOPE 2016</title>
+    <title>NOPE 2015</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,26 +26,20 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="nav">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">NOPE 2016</a>
+          <a class="navbar-brand" href="#">NOPE 2015</a>
         </div>
-        <div class="collapse navbar-collapse" id="mynav">
+        <div class="collapse navbar-collapse" id="nav">
           <ul class="nav navbar-nav">
-            <!-- note: scrollspy doesn't play nicely with other options in <a>
-                 tags. So the that's why we have an extra div with the toggle
-                 features (which are so that the drop-down menu auto-hides
-                 itself on mobile). -->
-<!-- PROGRAM navigation
-            <li><a href="#program"><div data-toggle="collapse" data-target="#mynav">Program</div></a></li>
--->
-            <li><a href="#about"><div data-toggle="collapse" data-target="#mynav">About</div></a></li>
-            <li><a href="#cfp"><div data-toggle="collapse" data-target="#mynav">Call for Papers</div></a></li>
-            <li><a href="#committee"><div data-toggle="collapse" data-target="#mynav">Committee</div></a></li>
-            <li><a href="#submission"><div data-toggle="collapse" data-target="#mynav">Submit a Paper</div></a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cfp">Call for Papers</a></li>
+            <li><a href="#committee">Committee</a></li>
+            <li><a href="#submission">Submit a Paper</a></li>
           </ul>
         </div>
       </div>
@@ -53,15 +47,14 @@
 
     <div id="page" class="container">
       <div class="container page-header">
-        <h1>2016 Workshop on<br/>
+        <h1>2015 Workshop on<br/>
           <span class="spacing">&emsp;</span>Negative Outcomes,<br/>
           <span class="spacing">&emsp;&emsp;</span>Post-mortems, and<br/>
           <span class="spacing">&emsp;&emsp;&emsp;</span>Experiences</h1>
-        <h3>In conjunction with <a href="http://www.microarch.org/micro49/">MICRO-49</a>
-        <h3>October 15-19, 2016</h3>
-        <h3>Taipei, Taiwan</h3>
+        <h3>In conjunction with <a href="http://www.microarch.org/micro48/">MICRO 2015</a>
+        <h3>December 6, 2015</h3>
+        <h3>Waikiki, Hawaii</h3>
       </div>
-<!-- PROGRAM template 
       <div id="program" class="container section">
         <h3>Program</h3>
         <table class="table table-striped">
@@ -74,14 +67,48 @@
           </thead>
           <tbody>
             <tr>
-              <td>Start - End</td>
-              <td>Talk or Session Name<br/><a href="/papers/2016/#">[link, if necessary]</a></td>
-              <td><a href="http://example.com/">Speaker Name<br/>Institution</a></td>
+              <td>9:00 - 9:10</td>
+              <td>Opening remarks</td>
+              <td><a href="http://vlsiarch.eecs.harvard.edu">David Brooks<br/>Harvard</a></td>
+            </tr>
+            <tr>
+              <td>9:10 - 9:30</td>
+              <td>From software to silicon in the big data era<br/><a href="/papers/2015/wang15fpga.pdf">[paper]</a></td>
+              <td><a href="http://staff.ustc.edu.cn/~cswang/">Chao Wang<br/>USTC and UCSB</a></td>
+            </tr>
+            <tr>
+              <td>9:30 - 9:55</td>
+              <td>[talk title]</td>
+              <td><a href="http://jasonmars.org">Jason Mars<br/>U of Michigan</a></td>
+            </tr>
+            <tr>
+              <td>9:55 - 10:20</td>
+              <td>Whither acoherent shared memory?<br/><a href="/papers/2015/hill15asm.pptx">[slides]</a></td>
+              <td><a href="http://pages.cs.wisc.edu/~markhill/">Mark Hill<br/>U of Wisconsin-Madison</a></td>
+            </tr>
+            <tr>
+              <td>10:20 - 10:40</td>
+              <td>Break</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10:40 - 11:05</td>
+              <td>End of the road for my CAREER<br/><a href="/papers/2015/janapareddi15career.pdf">[slides]</a></td>
+              <td><a href="http://3nity.io/~vj/">Vijay Janapa Reddi<br/>U of Texas at Austin</a></td>
+            </tr>
+            <tr>
+              <td>11:05 - 11:30</td>
+              <td>Exploiting choice: an implementable approach to architecture research</td>
+              <td><a href="https://research.nvidia.com/users/joel-emer">Joel Emer<br/>Nvidia and MIT</a></td>
+            </tr>
+            <tr>
+              <td>11:30 - 11:55</td>
+              <td>Mastering the fine art of the pivot<br/><a href="/papers/2015/austin15pivot.pdf">[slides]</a><a href="/papers/2015/austin15pivot.pptx">[+pptx]</a></td>
+              <td><a href="http://web.eecs.umich.edu/~taustin/">Todd Austin<br/>U of Michigan</a></td>
             </tr>
           </tbody>
         </table>
       </div>
--->
   
       <div id="about" class="container section">
         <h3>What is NOPE?</h3>
@@ -92,8 +119,6 @@
         <p>
         The best negative results help us learn from our mistakes. They can illuminate hidden obstacles or demonstrate why we need a change of course. An ideal submission to NOPE has a novel idea which sounds plausible from first principles or design intuition, but yields little to no improvement (in performance, power, area, &hellip;) in practice. The paper drills down into the reasons for the lack of improvement and proposes a plausible explanation &ndash; different technology trends, unexpected implementation complexity.
         </p>
-        <h3>Prior NOPE Workshops</h3>
-        <a href="http://nope.pub/2015/">NOPE 2015</a> Waikiki, HI
       </div>
   
       <div id="cfp" class="container section">
@@ -111,25 +136,22 @@
           <li>Any research which serves to share the lessons of failure to the broader community, such that we can avoid repeating them in the future.</li>
         </ul>
 
-<!-- CFP
         <p>
         A pdf version suitable for distribution can be downloaded here:
-        <a href="cfp/nope.pdf">NOPE CFP</a><br>
+        <a href="cfp/nope.pdf">NOPE 2015 CFP</a><br>
         </p>
--->
-
         <h3>Important dates</h3>
-        Paper submission: October 2nd, 2016<br>
-        Author notification: October 4th, 2016<br>
-        Camera-ready version: October 11th, 2016<br>
+        Paper submission: November <strike>2nd</strike>18th, 2015<br>
+        Author notification: November <strike>18th</strike>23rd, 2015<br>
+        Camera-ready version: December 2nd, 2015<Br>
       </div>
 
       <div id="committee" class="container section">
         <h3>Organizers</h3>
         David Brooks, Harvard<br>
-        Brandon Reagen, Harvard<br>
-        Bob Adolf, Harvard<br>
         Svilen Kanev, Harvard<br>
+        Bob Adolf, Harvard<br>
+        Brandon Reagen, Harvard<br>
         <h3>Program Committee</h3>
         Chris Batten, Cornell<br>
         Luis Ceze, University of Washington<br>
@@ -143,7 +165,7 @@
       <div id="submission" class="container section">
         <h3>Submission Guidelines</h3>
         <p>We believe in substance over style, and we encourage authors to prioritize delivering their message over conforming to a particular template. That being said, we anticipate papers will probably end up in the 4&ndash;6 page range, and we encourage authors to use a two-column format. Papers need not be anonymized.</p>
-        <p>Additionally, while one of the goals of NOPE is to find a home for papers that can sometimes be difficult to publish elsewhere, we do not wish to preclude publication elsewhere. NOPE 2016 will not be indexed with IEEE or ACM, so authors should feel free to expand and submit their work to larger venues. We discourage resubmission of previously published papers, though "second-look" papers or retrospectives fall squarely within the scope of the workshop and are welcomed.</p>
+        <p>Additionally, while one of the goals of NOPE is to find a home for papers that can sometimes be difficult to publish elsewhere, we do not wish to preclude publication elsewhere. NOPE 2015 will not be indexed with IEEE or ACM, so authors should feel free to expand and submit their work to larger venues. We discourage resubmission of previously published papers, though "second-look" papers or retrospectives fall squarely within the scope of the workshop and are welcomed.</p>
 
         <h3>Submit</h3>
         <p>Please submit your papers via email to: <a href="mailto:submissions@nope.pub?subject=Submission">submissions@nope.pub</a> by 11:59pm (anywhere on Earth) on the deadline.</p>
