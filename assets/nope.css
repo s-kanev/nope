@@ -11,7 +11,7 @@ body {
     font-size: 16px;
   }
 }
-a, a:hover {
+a, a:hover, a:active, a:focus, a:visited {
   color: #AC3f36;
 }
 
@@ -105,4 +105,12 @@ a, a:hover {
 .section>h3 {
   font-family: 'Questrial', sans-serif;
   color: #AC3f36;
+}
+
+.abstract {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid #AC3f36;
 }

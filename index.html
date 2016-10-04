@@ -39,9 +39,7 @@
                  tags. So the that's why we have an extra div with the toggle
                  features (which are so that the drop-down menu auto-hides
                  itself on mobile). -->
-<!-- PROGRAM navigation
             <li><a href="#program"><div data-toggle="collapse" data-target="#mynav">Program</div></a></li>
--->
             <li><a href="#about"><div data-toggle="collapse" data-target="#mynav">About</div></a></li>
             <li><a href="#cfp"><div data-toggle="collapse" data-target="#mynav">Call for Papers</div></a></li>
             <li><a href="#committee"><div data-toggle="collapse" data-target="#mynav">Committee</div></a></li>
@@ -61,9 +59,12 @@
         <h3>October 15, 2016</h3>
         <h3>Taipei, Taiwan</h3>
       </div>
-<!-- PROGRAM template 
+
       <div id="program" class="container section">
         <h3>Program</h3>
+
+        Tentative schedule:
+
         <table class="table table-striped">
           <thead>
             <tr>
@@ -74,14 +75,78 @@
           </thead>
           <tbody>
             <tr>
-              <td>Start - End</td>
-              <td>Talk or Session Name<br/><a href="/papers/2016/#">[link, if necessary]</a></td>
-              <td><a href="http://example.com/">Speaker Name<br/>Institution</a></td>
+              <td>1:45 - 2:00</td>
+              <td>Opening remarks</td>
+              <td><a href="http://www.eecs.harvard.edu/~dbrooks/">David Brooks<br/>Harvard</a></td>
+            </tr>
+            <tr>
+              <td>2:00 - 2:30</td>
+              <td>Processor thermal management: from energy harvesting to advanced cooling<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-wu" aria-expanded="false" aria-controls="abstract-wu">[Abstract]</a>
+                  <!--<a href="/papers/2016/#">[paper or slides link]</a>-->
+              </td>
+              <td><a href="http://faculty.engineering.asu.edu/carolewu/">Carole Wu<br/>Arizona State University</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-wu"><td colspan="3">
+              <div class="abstract">
+              High temperature in computing devices is becoming the show stopper for high-performance computing platforms from smartphones that serve our personalized computing needs to high-capacity data center servers. High temperature stems from the high heat flux produced as a result of high computation demands. Instead of dissipating the processor waste heat, one potentially plausible approach is to harvest the heat that would otherwise be wasted and use the recovered energy to improve the energy efficiency of the processor. This talk will present the processor energy harvesting opportunity and the approaches undertaken. Then it will transition into designs with advanced active cooling technologies to improve the overall system energy efficiency.
+              </div>
+            </td></tr>
+            <tr>
+              <td>2:30 - 3:00</td>
+              <td>Pre-silicon power-performance modeling and management: challenges and pitfalls<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-bose" aria-expanded="false" aria-controls="abstract-bose">[Abstract]</a>
+                  <!--<a href="/papers/2016/#">[paper or slides link]</a>-->
+              </td>
+              <td><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-pbose">Pradip Bose<br/>IBM</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-bose"><td colspan="3">
+              <div class="abstract">
+              Cycle-accurate performance modeling and associated efforts to project power consumption constitute key aspects of pre-RTL concept definition of microprocessors. Defining on-chip power management architectures is an added task in the modern power-constrained design environment. In this talk, the speaker will present an experience report, based on his involvement with a range of POWER and mainframe processor development projects at IBM over the last several decades. In particular, the pitfalls of pre-silicon modeling (in terms of potential sources of errors) that can lead to major post-silicon surprises or mid-stage project cancellations will be summarized. Real-life examples, taken from major processor development project experiences will be cited.
+              </div>
+            </td></tr>
+            <tr>
+              <td>3:00 - 3:30</td>
+              <td>Coffee Break</td><td></td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:00</td>
+              <td>The unrealized potential of data value speculation<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-gonzalez" aria-expanded="false" aria-controls="abstract-gonzalez">[Abstract]</a>
+                  <!--<a href="/papers/2016/#">[paper or slides link]</a>-->
+              </td>
+              <td><a href="http://personals.ac.upc.edu/antonio/">Antonio Gonz&aacute;lez<br/>Universitat Polit&egrave;cnica de Catalunya</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-gonzalez"><td colspan="3">
+              <div class="abstract">
+              The concept of data value speculation started to be researched in the mid 90s. The initial idea was focused on boosting performance in single threaded microprocessors by breaking data dependences. Later, the scope was expanded to multithreaded/multicore processors, giving rise to a plethora of works on what was called speculative multithreading. These topics attracted the interest of many researchers and were the focus of many published papers for more than a decade. However, in spite of many interesting, innovative and promising ideas, these works have had a limited impact in industry. In this talk, I will review these technologies and discuss its strengths and weaknesses, and the main reasons for their limited impact in commercial microprocessors.
+              </div>
+            </td></tr>
+            <tr>
+              <td>4:00 - 4:30</td>
+              <td>Through fire and flood &ndash; what it took to get Catapult into production<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-putnam" aria-expanded="false" aria-controls="abstract-putnam">[Abstract]</a>
+                  <!--<a href="/papers/2016/#">[paper or slides link]</a>-->
+              </td>
+              <td><a href="https://www.microsoft.com/en-us/research/people/anputnam/">Andrew Putnam<br/>Microsoft Research</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-putnam"><td colspan="3">
+              <div class="abstract">
+              Microsoft Catapult has brought the power and promise of reconfigurable computing to hyperscale datacenters, accelerating major production cloud applications such as Bing web search and Microsoft Azure. But the getting Catapult to production required overcoming innumerable roadblocks, uncertainties, and challenges. In this talk, we will reveal some of the challenges, how they were overcome, and the stories behind what it took to get Catapult from a caffeine-fueled PowerPoint presentation into the largest deployment of reconfigurable computing in the world.
+              </div>
+            </td></tr>
+            <tr>
+              <td>4:30 - 4:45</td>
+              <td>Closing remarks</td>
+              <td><a href="http://eecs.harvard.edu/~reagen/">Brandon Reagen<br/>Harvard</a></td>
             </tr>
           </tbody>
         </table>
       </div>
--->
   
       <div id="about" class="container section">
         <h3>What is NOPE?</h3>
