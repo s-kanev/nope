@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- Modeled off of Bootstrap's fine starter template. Thanks! -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOPE 2017</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="http://fonts.googleapis.com/css?family=Questrial|PT+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/nope.css">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Scrollspy? Scrollspy! http://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp -->
+
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">NOPE 2017</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynav">
+          <ul class="nav navbar-nav">
+            <!-- note: scrollspy doesn't play nicely with other options in <a>
+                 tags. So the that's why we have an extra div with the toggle
+                 features (which are so that the drop-down menu auto-hides
+                 itself on mobile). -->
+            <li><a href="#program"><div data-toggle="collapse" data-target="#mynav">Program</div></a></li>
+            <li><a href="#about"><div data-toggle="collapse" data-target="#mynav">About</div></a></li>
+            <li><a href="#cfp"><div data-toggle="collapse" data-target="#mynav">Call for Papers</div></a></li>
+            <li><a href="#committee"><div data-toggle="collapse" data-target="#mynav">Committee</div></a></li>
+            <li><a href="#submission"><div data-toggle="collapse" data-target="#mynav">Submit a Paper</div></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="page" class="container">
+      <div class="container page-header">
+        <h1>2017 Workshop on<br/>
+          <span class="spacing">&emsp;</span>Negative Outcomes,<br/>
+          <span class="spacing">&emsp;&emsp;</span>Post-mortems, and<br/>
+          <span class="spacing">&emsp;&emsp;&emsp;</span>Experiences</h1>
+        <h3>In conjunction with <a href="http://www.microarch.org/micro50/">MICRO-50</a>
+        <h3>October 14, 2017</h3>
+        <h3>Cambridge, MA</h3>
+      </div>
+
+      <div id="program" class="container section">
+        <h3>Program</h3>
+
+        Tentative schedule:
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th style="width: 20%"></th>
+              <th style="width: 50%"></th>
+              <th style="width: 30%"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1:10 - 1:15</td>
+              <td>Opening remarks</td>
+              <td><a href="http://people.seas.harvard.edu/~reagen/index.html">Brandon Reagen<br/>Harvard</a></td>
+            </tr>
+            <tr>
+              <td>1:15 - 1:45</td>
+              <td>Cache Block Watermarking: Over-engineered and Underwhelming<br/>
+                  <a href="/papers/2017/gomes2017watermarking.pdf">[Paper]</a>
+              </td>
+              <!--<td><a href="https://sites.tufts.edu/tcal/">Cesar Gomes<br/>Tufts</a></td>-->
+              <td>Cesar Gomes<br/>Tufts University</td>
+            </tr>
+            <tr>
+              <td>1:45 - 2:15</td>
+              <td>Approximate Computing Is Dead; Long Live Approximate Computing<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-sampson" aria-expanded="false" aria-controls="abstract-sampson">[Abstract]</a>
+                  <a href="/papers/2017/sampson2017closed.pdf">[Slides]</a>
+              </td>
+              <td><a href="https://www.cs.cornell.edu/~asampson/">Adrian Sampson<br/>Cornell University</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-sampson"><td colspan="3">
+              <div class="abstract">
+              Approximation is not a new idea anymore. There have been many research successes, but in the negative space left by the publication record lie some attractive unsolved problems. Some of these directions are not unsolved because no one has tried, however: they are effectively impossible. With so many good open problems in approximate computing, attempting the impossible is a tragic waste of time. I will discuss a collection of problems in approximate computing that are no longer worth pursuing—and a few that are.
+              </div>
+            </td></tr>
+            <tr>
+              <td>2:15 - 2:45</td>
+              <td>Rethinking Systems Management with Game Theory: Milestones and Pitfalls<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-lee" aria-expanded="false" aria-controls="abstract-lee">[Abstract]</a>
+                  <!--<a href="/papers/2017/#">[paper or slides link]</a>-->
+              </td>
+              <td><a href="http://people.duke.edu/~bcl15/">Ben Lee<br/>Duke University</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-lee"><td colspan="3">
+              <div class="abstract">
+              Sharing hardware improves energy efficiency, but whether strategic users participate in consolidated systems depends on management policies. Users who dislike allocations may refuse to participate and deploy private, less-efficient systems. We rethink systems management, drawing on game theory to model strategic behavior and incentivize participation. We will survey milestones in applying game theory to resource allocation, power management, and workload colocation. Moreover, we will reveal pitfalls and false starts in our efforts to link systems architecture and algorithmic economics.
+              </div>
+            </td></tr>
+            <tr>
+              <td>3:00 - 3:30</td>
+              <td>Coffee Break</td><td></td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:00</td>
+              <td>Embracing Serendipity and Surprise<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-berger" aria-expanded="false" aria-controls="abstract-berger">[Abstract]</a>
+                  <!--<a href="/papers/2017/#">[paper or slides link]</a>-->
+              </td>
+              <td><a href="https://emeryberger.com/">Emery Berger<br/>UMass Amherst</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-berger"><td colspan="3">
+              <div class="abstract">
+              Asimov wrote 'the most exciting phrase to hear in science, the one that heralds new discoveries, is not "Eureka!" but "That's funny."' I will talk about embracing serendipity and surprise as a research strategy both to discover new approaches and as a way to cope with apparent setbacks (a.k.a. negative results) with concrete examples from my own research.
+              </div>
+            </td></tr>
+            <tr>
+              <td>4:00 - 4:30</td>
+              <td>It Seemed Secure at the Time: How and Why Unexpected Interactions Break Everything</br>
+                  <!--<a role="button" data-toggle="collapse" href="#abstract-sherwood" aria-expanded="false" aria-controls="abstract-sherwood">[Abstract]</a>-->
+                  <!--<a href="/papers/2017/#">[paper or slides link]</a>-->
+              </td>
+              <td><a href="https://www.cs.ucsb.edu/~sherwood/">Tim Sherwood<br/>UC Santa Barbara</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-sherwood"><td colspan="3">
+              <div class="abstract">
+              <!-- abstract here -->
+              </div>
+            </td></tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <div id="about" class="container section">
+        <h3>What is NOPE?</h3>
+        <p>
+  Not all research projects end up with positive results. Sometimes ideas that sound enticing at first run into unexpected complexity, high overheads, or turn out simply infeasible. Such projects often end up in a proverbial researcher's drawer, and the community as a whole is not aware of dead-end or hard-to-advance research directions. <strong>NOPE is a venue that encourages publishing such results in all their "badness".</strong>
+        </p>
+        <h3>What is a "good failure"?</h3>
+        <p>
+        The best negative results help us learn from our mistakes. They can illuminate hidden obstacles or demonstrate why we need a change of course. An ideal submission to NOPE has a novel idea which sounds plausible from first principles or design intuition, but yields little to no improvement (in performance, power, area, &hellip;) in practice. The paper drills down into the reasons for the lack of improvement and proposes a plausible explanation &ndash; different technology trends, unexpected implementation complexity.
+        </p>
+        <h3>Prior NOPE Workshops</h3>
+        <a href="http://nope.pub/2016/">NOPE 2016</a> Taipei, Taiwan</br>
+        <a href="http://nope.pub/2015/">NOPE 2015</a> Waikiki, HI
+      </div>
+  
+      <div id="cfp" class="container section">
+        <h3>Call for Papers</h3>
+        <p>
+        Our goal is to find papers which the community can learn from and might otherwise have trouble finding a suitable venue, so we take a broad view of what constitutes a "negative" result.
+        A good NOPE submission might entail:
+        </p>
+        <ul>
+          <li>Thorough evaluations of failed projects which uncover and characterize the root cause.</li>
+          <li>Papers which describe both positive and negative results, with an emphasis on the underlying reasons behind why some succeeded and other failed.</li>
+          <li>Cradle-to-grave examination of completed projects, specifically to dissect dead-ends and unworkable solutions encountered along the way.</li>
+          <li>Design space explorations or comprehensive experiments which suggest a particular technique is unlikely to work under a realistic set of assumptions.</li>
+          <li>Research which uncovers fundamental limitations in scalability, performance, accuracy, or other quantifiable metrics.</li>
+          <li>Any research which serves to share the lessons of failure to the broader community, such that we can avoid repeating them in the future.</li>
+        </ul>
+
+<!-- CFP
+        <p>
+        A pdf version suitable for distribution can be downloaded here:
+        <a href="cfp/nope.pdf">NOPE CFP</a><br>
+        </p>
+-->
+
+        <h3>Important dates</h3>
+        Paper submission: September 27nd, 2017<br>
+        Author notification: September 29th, 2017<br>
+        Camera-ready version: October 7th, 2017<br>
+      </div>
+
+      <div id="committee" class="container section">
+        <h3>Organizers</h3>
+        David Brooks, Harvard<br>
+        Brandon Reagen, Harvard<br>
+        Bob Adolf, Harvard<br>
+        Svilen Kanev, Google<br>
+        <h3>Program Committee</h3>
+        Chris Batten, Cornell<br>
+        Luis Ceze, University of Washington<br>
+        Tipp Moseley, Google<br>
+        Thomas Wenisch, University of Michigan<br>
+
+        <h3>Contact</h3>
+        <p>Questions? <a href="mailto:contact@nope.pub?subject=Question about the workshop">Send us an email.</a></p>
+      </div>
+
+      <div id="submission" class="container section">
+        <h3>Submission Guidelines</h3>
+        <p>We believe in substance over style, and we encourage authors to prioritize delivering their message over conforming to a particular template. That being said, we anticipate papers will probably end up in the 4&ndash;6 page range, and we encourage authors to use a two-column format. Papers need not be anonymized.</p>
+        <p>Additionally, we ask that you also include a short, 1-paragraph abstract in your submission email. This should be suitable for inclusion on the NOPE website and program handouts.</p>
+        <p>Finally, while one of the goals of NOPE is to find a home for papers that can sometimes be difficult to publish elsewhere, we do not wish to preclude publication elsewhere. NOPE 2017 will not be indexed with IEEE or ACM, so authors should feel free to expand and submit their work to larger venues. We discourage resubmission of previously published papers, though "second-look" papers or retrospectives fall squarely within the scope of the workshop and are welcomed.</p>
+
+        <h3>Submit</h3>
+        <p>Please submit your papers via email to: <a href="mailto:submissions@nope.pub?subject=Submission">submissions@nope.pub</a> by 11:59pm (anywhere on Earth) on the deadline.</p>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-66549897-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+  </body>
+</html>
