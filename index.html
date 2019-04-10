@@ -60,6 +60,94 @@
         <h3>Providence, RI</h3>
       </div>
 
+      <div id="program" class="container section">
+        <h3>Program</h3>
+
+        Tentative schedule:
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th style="width: 20%"></th>
+              <th style="width: 50%"></th>
+              <th style="width: 30%"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1:45 - 2:00</td>
+              <td>Opening remarks</td>
+              <td><a href="http://vlsiarch.eecs.harvard.edu/">Organizers<br/>Harvard</a></td>
+            </tr>
+            <tr>
+              <td>2:00 - 2:30</td>
+              <td>The Secret Life of Negative Results<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-khan" aria-expanded="false" aria-controls="abstract-khan">[Abstract]</a>
+              </td>
+              <td><a href="https://www.cs.virginia.edu/~smk9u/">Samira Khan<br/>Univeristy of Virginia</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-khan"><td colspan="3">
+              <div class="abstract">
+                <p>In this talk, I will focus on the importance of negative results in initiating scientific revolutions. As Thomas Kuhn described in his famous book, "The Structure of Scientific Revolution", when results fail to conform to existing and established norms of the community, it leads to questioning and reexamining of the current paradigm, which eventually leads to a scientific revolution and a paradigm change.</p>
+                <p>Taking inspiration from Kuhn's model, I will show how my research on DRAM reliability produced negative results that pushes us to rethink our current models and abstractions. As DRAM cells scale down to smaller sizes, cells become more vulnerable, resulting in DRAM failures. Enabling higher capacity memory system without sacrificing reliability is a major research challenge. I propose that it is possible to enable DRAM scaling at a lower cost if the cells do not need to provide a strict reliability guarantee for correct operation. I envision to enable DRAM scaling by using system-level detection and mitigation of DRAM failures while the system is running in the field. The only problem is designing such a system is challenging due to intermittent DRAM failures. I will discuss how I performed experiments on real DRAM chips for years to characterize these errors that laid out the challenges in designing an intelligent system capable of providing reliability guarantee in the field.</p>
+                <p>I will end the talk with concluding remarks on how my work shows the limit of a certain technology, formulates how much we can push it, and enforces us to rethink and redesign the system with new emerging technologies. Once the accepted model breaks down, the opportunities to define a new paradigm creates exciting research opportunities. We are extremely lucky that we are in the midst of such a paradigm change in our lifetime!</p>
+              </div>
+            </td></tr>
+            <tr>
+              <td>2:30 - 3:00</td>
+              <td>Virtual Memory for Accelerators<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-bhattacharjee" aria-expanded="false" aria-controls="abstract-bhattacharjee">[Abstract]</a>
+              </td>
+              <td><a href="http://www.cs.yale.edu/homes/abhishek/">Abhishek Bhattacharjee<br/>Yale</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-bhattacharjee"><td colspan="3">
+              <div class="abstract">
+                <p>Accelerators must be programmable in order to be useful. Unfortunately, programmability is difficult to quantify, while classic programmability-enhancing abstractions have hardware/software costs. This makes it challenging to assess if (and how much) accelerators should integrate such abstractions without excessively detracting from performance per watt.</p>
+                <p>This talk focuses on my group's work on virtual memory, a classic abstraction that has eased programming effort for decades. Through the lens of the programmability versus specialization debate, I discuss the false starts, failures, and unexpected successes that we have encountered over the last decade of my group's research journey.</p>
+              </div>
+            </td></tr>
+            <tr>
+              <td>3:00 - 3:30</td>
+              <td>Coffee Break<br/>(all workshops)</td><td></td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:00</td>
+              <td>Do you plan to use Machine Learning? Proceed with caution!<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-joshi" aria-expanded="false" aria-controls="abstract-joshi">[Abstract]</a>
+              </td>
+              <td><a href="https://www.bu.edu/eng/profile/ajay-joshi/">Ajay Joshi<br/>Boston University</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-joshi"><td colspan="3">
+              <div class="abstract">
+                <p>Lately, everyone has been using (or at least considering to use) Machine Learning (ML), in one form or other, to solve challenging hard-to-solve research problems. However, ML is not a panacea and needs to be used with caution. In this talk, I'll present our experience with using ML and Hardware Performance Counters for detecting malware.</p>
+              </div>
+            </td></tr>
+            <tr>
+              <td>4:00 - 4:30</td>
+              <td>Batteryless Intermittent Computer Systems ... in Space!<br/>
+                  <a role="button" data-toggle="collapse" href="#abstract-lucia" aria-expanded="false" aria-controls="abstract-lucia">[Abstract]</a>
+              </td>
+              <td><a href="https://brandonlucia.com/">Brandon Lucia<br/>CMU</a></td>
+            </tr>
+            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
+            <tr class="collapse" id="abstract-lucia"><td colspan="3">
+              <div class="abstract">
+                <p>The emergence of extremely low-power computing components and efficient energy-harvesting power systems has led to the creation of computer systems that operate using tiny amounts of energy scavenged from their environment. These devices create opportunities for systems where batteries and tethered power are inapplicable: sensors deeply embedded in pervasive civil infrastructure, in-body health monitors, and devices in extreme environments like glaciers, volcanoes, and space.  The key challenge is that these devices operate only intermittently, as energy is available, requiring both hardware and software to tolerate power failures that may happen hundreds of times per second. This talk will describe the landscape of intermittent computing hardware and software systems as we have developed them.</p>
+                <p>I will then give an experience report detailing our recently successful, years-long effort to launch several tiny, batteryless, intermittent sensing, computing, and communications system to low earth orbit including a number of our recent research results.  Our "chipsats" were launched as part of Zac Manchester's (Stanford) KickSat-2 mission, making up part of a constellation of around 100 2cm x 2cm chipsat devices.  I will describe the technical underpinnings of the system in detail, including the power system, computing hardware and software, sensor setup, and communication signal chain.  I will discuss surprising procedural barriers that made launching a challenge, including bureaucratic hurdles, communications failures, shifting deadlines, debris risks, and the benefits of being "taken out with the trash" from the international space station. I will close with lessons learned from this deployment and plans for future chipsat missions.</p>
+              </div>
+            </td></tr>
+            <tr>
+              <td>4:30 - 4:40</td>
+              <td>The End.</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div id="about" class="container section">
         <h3>What is NOPE?</h3>
         <p>
