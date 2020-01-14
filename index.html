@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NOPE 2019</title>
+    <title>NOPE 2020</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">NOPE 2019</a>
+          <a class="navbar-brand" href="#">NOPE 2020</a>
         </div>
         <div class="collapse navbar-collapse" id="mynav">
           <ul class="nav navbar-nav">
@@ -51,114 +51,34 @@
 
     <div id="page" class="container">
       <div class="container page-header">
-        <h1>2019 Workshop on<br/>
-          <span class="spacing">&emsp;</span>Negative Outcomes,<br/>
-          <span class="spacing">&emsp;&emsp;</span>Post-mortems, and<br/>
-          <span class="spacing">&emsp;&emsp;&emsp;</span>Experiences</h1>
-        <h3>In conjunction with <a href="https://asplos-conference.org/">ASPLOS-24</a>
-        <h3>April 14, 2019</h3>
-        <h3>Providence, RI</h3>
-      </div>
-
-      <div id="program" class="container section">
-        <h3>Program</h3>
-
-        Tentative schedule:
-
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th style="width: 20%"></th>
-              <th style="width: 50%"></th>
-              <th style="width: 30%"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1:45 - 2:00</td>
-              <td>Opening remarks</td>
-              <td><a href="http://vlsiarch.eecs.harvard.edu/">Organizers<br/>Harvard</a></td>
-            </tr>
-            <tr>
-              <td>2:00 - 2:30</td>
-              <td>The Secret Life of Negative Results<br/>
-                  <a role="button" data-toggle="collapse" href="#abstract-khan" aria-expanded="false" aria-controls="abstract-khan">[Abstract]</a>
-                  <a href="/papers/2019/khan2019secret.pptx">[Slides]</a>
-              </td>
-              <td><a href="https://www.cs.virginia.edu/~smk9u/">Samira Khan<br/>Univeristy of Virginia</a></td>
-            </tr>
-            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
-            <tr class="collapse" id="abstract-khan"><td colspan="3">
-              <div class="abstract">
-                <p>In this talk, I will focus on the importance of negative results in initiating scientific revolutions. As Thomas Kuhn described in his famous book, "The Structure of Scientific Revolution", when results fail to conform to existing and established norms of the community, it leads to questioning and reexamining of the current paradigm, which eventually leads to a scientific revolution and a paradigm change.</p>
-                <p>Taking inspiration from Kuhn's model, I will show how my research on DRAM reliability produced negative results that pushes us to rethink our current models and abstractions. As DRAM cells scale down to smaller sizes, cells become more vulnerable, resulting in DRAM failures. Enabling higher capacity memory system without sacrificing reliability is a major research challenge. I propose that it is possible to enable DRAM scaling at a lower cost if the cells do not need to provide a strict reliability guarantee for correct operation. I envision to enable DRAM scaling by using system-level detection and mitigation of DRAM failures while the system is running in the field. The only problem is designing such a system is challenging due to intermittent DRAM failures. I will discuss how I performed experiments on real DRAM chips for years to characterize these errors that laid out the challenges in designing an intelligent system capable of providing reliability guarantee in the field.</p>
-                <p>I will end the talk with concluding remarks on how my work shows the limit of a certain technology, formulates how much we can push it, and enforces us to rethink and redesign the system with new emerging technologies. Once the accepted model breaks down, the opportunities to define a new paradigm creates exciting research opportunities. We are extremely lucky that we are in the midst of such a paradigm change in our lifetime!</p>
-              </div>
-            </td></tr>
-            <tr>
-              <td>2:30 - 3:00</td>
-              <td>Virtual Memory for Accelerators<br/>
-                  <a role="button" data-toggle="collapse" href="#abstract-bhattacharjee" aria-expanded="false" aria-controls="abstract-bhattacharjee">[Abstract]</a>
-              </td>
-              <td><a href="http://www.cs.yale.edu/homes/abhishek/">Abhishek Bhattacharjee<br/>Yale</a></td>
-            </tr>
-            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
-            <tr class="collapse" id="abstract-bhattacharjee"><td colspan="3">
-              <div class="abstract">
-                <p>Accelerators must be programmable in order to be useful. Unfortunately, programmability is difficult to quantify, while classic programmability-enhancing abstractions have hardware/software costs. This makes it challenging to assess if (and how much) accelerators should integrate such abstractions without excessively detracting from performance per watt.</p>
-                <p>This talk focuses on my group's work on virtual memory, a classic abstraction that has eased programming effort for decades. Through the lens of the programmability versus specialization debate, I discuss the false starts, failures, and unexpected successes that we have encountered over the last decade of my group's research journey.</p>
-              </div>
-            </td></tr>
-            <tr>
-              <td>3:00 - 3:30</td>
-              <td>Coffee Break<br/>(all workshops)</td><td></td>
-            </tr>
-            <tr>
-              <td>3:30 - 4:00</td>
-              <td>Do you plan to use Machine Learning? Proceed with caution!<br/>
-                  <a role="button" data-toggle="collapse" href="#abstract-joshi" aria-expanded="false" aria-controls="abstract-joshi">[Abstract]</a>
-              </td>
-              <td><a href="https://www.bu.edu/eng/profile/ajay-joshi/">Ajay Joshi<br/>Boston University</a></td>
-            </tr>
-            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
-            <tr class="collapse" id="abstract-joshi"><td colspan="3">
-              <div class="abstract">
-                <p>Lately, everyone has been using (or at least considering to use) Machine Learning (ML), in one form or other, to solve challenging hard-to-solve research problems. However, ML is not a panacea and needs to be used with caution. In this talk, I'll present our experience with using ML and Hardware Performance Counters for detecting malware.</p>
-              </div>
-            </td></tr>
-            <tr>
-              <td>4:00 - 4:30</td>
-              <td>Batteryless Intermittent Computer Systems ... in Space!<br/>
-                  <a role="button" data-toggle="collapse" href="#abstract-lucia" aria-expanded="false" aria-controls="abstract-lucia">[Abstract]</a>
-              </td>
-              <td><a href="https://brandonlucia.com/">Brandon Lucia<br/>CMU</a></td>
-            </tr>
-            <tr class="hidden"><td></td></tr><!--this counter-balances the collapsed table row to keep the overall table striping correct-->
-            <tr class="collapse" id="abstract-lucia"><td colspan="3">
-              <div class="abstract">
-                <p>The emergence of extremely low-power computing components and efficient energy-harvesting power systems has led to the creation of computer systems that operate using tiny amounts of energy scavenged from their environment. These devices create opportunities for systems where batteries and tethered power are inapplicable: sensors deeply embedded in pervasive civil infrastructure, in-body health monitors, and devices in extreme environments like glaciers, volcanoes, and space.  The key challenge is that these devices operate only intermittently, as energy is available, requiring both hardware and software to tolerate power failures that may happen hundreds of times per second. This talk will describe the landscape of intermittent computing hardware and software systems as we have developed them.</p>
-                <p>I will then give an experience report detailing our recently successful, years-long effort to launch several tiny, batteryless, intermittent sensing, computing, and communications system to low earth orbit including a number of our recent research results.  Our "chipsats" were launched as part of Zac Manchester's (Stanford) KickSat-2 mission, making up part of a constellation of around 100 2cm x 2cm chipsat devices.  I will describe the technical underpinnings of the system in detail, including the power system, computing hardware and software, sensor setup, and communication signal chain.  I will discuss surprising procedural barriers that made launching a challenge, including bureaucratic hurdles, communications failures, shifting deadlines, debris risks, and the benefits of being "taken out with the trash" from the international space station. I will close with lessons learned from this deployment and plans for future chipsat missions.</p>
-              </div>
-            </td></tr>
-            <tr>
-              <td>4:30 - 4:40</td>
-              <td>The End.</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        <h1>2020 Workshop on<br/>
+          <span class="spacing">&emsp;</span>Negative results,<br/>
+          <span class="spacing">&emsp;&emsp;</span>Opportunities,<br/>
+          <span class="spacing">&emsp;&emsp;&emsp;</span>Perspectives, and<br/>
+          <span class="spacing">&emsp;&emsp;&emsp;&emsp;</span>Experiences</h1>
+        <h3>In conjunction with <a href="https://asplos-conference.org/">ASPLOS-25</a>
+        <h3>March 16, 2020</h3>
+        <h3>Lausanne, Switzerland</h3>
       </div>
 
       <div id="about" class="container section">
-        <h3>What is NOPE?</h3>
+	<h3>Bringing historical perspectives to NOPE</h3>
+	<p>
+	At MICRO 2019, Lynn Conway gave a keynote describing her personal story and the "techno-social" factors which led to her contributions being undervalued and unseen. Inspired by her perspective and call to action, we aim to rebrand the aims and goals NOPE to be more inclusive of historical perspectives and descriptions of how technical concepts came to be commonplace.
+	</p>
+	<p>
+	NOPE will remain a place for open, honest port-mortems of research projects which ran into unexpected limitations and resulted in lessons learned. In addition, it will offer a venue to discuss contributions that have been underappreciated and misconstrued over time. In this way, the goals of NOPE are to reflect on negative outcomes, shed light on the origin of ideas, and offer a venue to revise our understanding and uncover opportunities to move forward by reflecting on mistakes that can be made throughout the research process.
+	</p>
+        <h3>Why do we need to talk about negative results?</h3>
         <p>
-  Not all research projects end up with positive results. Sometimes ideas that sound enticing at first run into unexpected complexity, high overheads, or turn out simply infeasible. Such projects often end up in a proverbial researcher's drawer, and the community as a whole is not aware of dead-end or hard-to-advance research directions. <strong>NOPE is a venue that encourages publishing such results in all their "badness".</strong>
-        </p>
+ 	Not all research projects end up with positive results. Sometimes ideas that sound enticing at first run into unexpected complexity, high overheads, or turn out simply infeasible. Such projects often end up in a proverbial researcher's drawer, and the community as a whole is not aware of dead-end or hard-to-advance research directions. <strong>NOPE is a venue that encourages publishing such results in all their "badness".</strong>
+	</p>
         <h3>What is a "good failure"?</h3>
         <p>
         The best negative results help us learn from our mistakes. They can illuminate hidden obstacles or demonstrate why we need a change of course. An ideal submission to NOPE has a novel idea which sounds plausible from first principles or design intuition, but yields little to no improvement (in performance, power, area, &hellip;) in practice. The paper drills down into the reasons for the lack of improvement and proposes a plausible explanation &ndash; different technology trends, unexpected implementation complexity.
         </p>
         <h3>Prior NOPE Workshops</h3>
+        <a href="http://nope.pub/2019/">NOPE 2019</a> Providence, RI</br>
         <a href="http://nope.pub/2017/">NOPE 2017</a> Cambridge, MA</br>
         <a href="http://nope.pub/2016/">NOPE 2016</a> Taipei, Taiwan</br>
         <a href="http://nope.pub/2015/">NOPE 2015</a> Waikiki, HI</br>
@@ -169,10 +89,13 @@
         <h3>Call for Papers</h3>
         <p>
         Our goal is to find papers which the community can learn from and might otherwise have trouble finding a suitable venue, so we take a broad view of what constitutes a "negative" result.
-        A good NOPE submission might entail:
+	</p>
+	<p>
+	We invite submissions from all sub-areas of systems and computer architecture. Submissions should focus on discussing historical perspectives, uncovering a misunderstood or misappropriated technical concept, analyzing the reasons for failure, especially in light of underlying assumptions. Submissions based on opinion, speculation, and non-fundamental circumstances ("there was a bug in the simulator") are not encouraged, as they do not provide concrete evidence as to whether an idea is bad. Topics of interest include:
         </p>
         <ul>
           <li>Thorough evaluations of failed projects which uncover and characterize the root cause.</li>
+	  <li>Reflections and historical perspectives on specific ideas, general trends, and "techno-social" factors in the systems and computer architecture community.</li>
           <li>Papers which describe both positive and negative results, with an emphasis on the underlying reasons behind why some succeeded and other failed.</li>
           <li>Cradle-to-grave examination of completed projects, specifically to dissect dead-ends and unworkable solutions encountered along the way.</li>
           <li>Design space explorations or comprehensive experiments which suggest a particular technique is unlikely to work under a realistic set of assumptions.</li>
@@ -180,17 +103,10 @@
           <li>Any research which serves to share the lessons of failure to the broader community, such that we can avoid repeating them in the future.</li>
         </ul>
 
-<!-- CFP
-        <p>
-        A pdf version suitable for distribution can be downloaded here:
-        <a href="cfp/nope.pdf">NOPE CFP</a><br>
-        </p>
--->
-
         <h3>Important dates</h3>
-        Paper submission: March 22nd, 2019<br>
-        Author notification: April 1st, 2019<br>
-        Camera-ready version: April 5th, 2019<br>
+        Paper submission: March 2nd, 2020<br>
+        Author notification: March 9th, 2020<br>
+        Camera-ready version: March 15th, 2020<br>
       </div>
 
       <div id="committee" class="container section">
@@ -198,7 +114,7 @@
         Lillie Pentecost, Harvard<br>
         Udit Gupta, Harvard<br>
         David Brooks, Harvard<br>
-        Brandon Reagen, Facebook<br>
+        Brandon Reagen, NYU / Facebook<br>
         Svilen Kanev, Google<br>
         Bob Adolf, Harvard<br>
         <h3>Program Committee</h3>
@@ -215,7 +131,6 @@
         <h3>Submission Guidelines</h3>
         <p>We believe in substance over style, and we encourage authors to prioritize delivering their message over conforming to a particular template. That being said, we anticipate papers will probably end up in the 4&ndash;6 page range, and we encourage authors to use a two-column format. Papers need not be anonymized.</p>
         <p>Additionally, we ask that you also include a short, 1-paragraph abstract in your submission email. This should be suitable for inclusion on the NOPE website and program handouts.</p>
-        <p>Finally, while one of the goals of NOPE is to find a home for papers that can sometimes be difficult to publish elsewhere, we do not wish to preclude publication elsewhere. NOPE 2017 will not be indexed with IEEE or ACM, so authors should feel free to expand and submit their work to larger venues. We discourage resubmission of previously published papers, though "second-look" papers or retrospectives fall squarely within the scope of the workshop and are welcomed.</p>
 
         <h3>Submit</h3>
         <p>Please submit your papers via email to: <a href="mailto:submissions@nope.pub?subject=Submission">submissions@nope.pub</a> by 11:59pm (anywhere on Earth) on the deadline.</p>
