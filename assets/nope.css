@@ -69,6 +69,10 @@ a, a:hover, a:active, a:focus, a:visited {
   margin-top: 5px;
 }
 
+h2 {
+  color: red;
+}
+
 #page {
     padding-top: 15px;
 }
