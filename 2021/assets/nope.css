@@ -91,7 +91,7 @@ h2 {
 /* Sections style */
 .section {
   padding-top: 50px; /* Should match the navbar height for <a name> links */
-  min-height: 50px;
+  min-height: 500px;
 }
 .section p {
   text-align: justify;
